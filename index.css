@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.bg{
+    background: #cde0e4;
+}
+.banner>img{
+    position: relative;
+    display: block;
+    z-index: 5;
+}
+.sky {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+}
+
+.sky .flower_1 {
+    background: url(//res.bjmylike.com/wap/images/special/august/flower_1.png) no-repeat center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    z-index: 4
+}
+
+.sky .flower_2 {
+    background: url(//res.bjmylike.com/wap/images/special/august/flower_1.png) no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 4
+}
+
+.sky .flower_3 {
+    background: url(//res.bjmylike.com/wap/images/special/august/flower_1.png) no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 4
+}
+
+.flower_1 {
+    -webkit-animation: flower_1 8s linear infinite 0s;
+    -moz-animation: flower_1 8s linear infinite 0s;
+    -o-animation: flower_1 8s linear infinite 0s;
+    animation: flower_1 8s linear infinite 0s
+}
+
+.flower_2 {
+    -webkit-animation: flower_2 8s linear infinite 3s;
+    -moz-animation: flower_2 8s linear infinite 3s;
+    -o-animation: flower_2 8s linear infinite 3s;
+    animation: flower_2 8s linear infinite 3s
+}
+
+.flower_3 {
+    -webkit-animation: flower_3 8s linear infinite 6s;
+    -moz-animation: flower_3 8s linear infinite 6s;
+    -o-animation: flower_3 8s linear infinite 6s;
+    animation: flower_3 8s linear infinite 6s
+}
+
+.clouds_1 {
+    background: url(//res.bjmylike.com/wap/images/special/august/cloud_1.png) center;
+    background-size: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 300%;
+    -webkit-animation: cloud_1 50s linear infinite;
+    -moz-animation: cloud_1 50s linear infinite;
+    -o-animation: cloud_1 50s linear infinite;
+    animation: cloud_1 50s linear infinite;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}
+
+.clouds_2 {
+    background: url(//res.bjmylike.com/wap/images/special/august/cloud_2.png);
+    background-size: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 300%;
+    -webkit-animation: cloud_2 75s linear infinite;
+    -moz-animation: cloud_2 75s linear infinite;
+    -o-animation: cloud_2 75s linear infinite;
+    animation: cloud_2 75s linear infinite
+}
+
+.clouds_3 {
+    background: url(//res.bjmylike.com/wap/images/special/august/cloud_3.png);
+    background-size: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 300%;
+    -webkit-animation: cloud_3 100s linear infinite;
+    -moz-animation: cloud_3 100s linear infinite;
+    -o-animation: cloud_3 100s linear infinite;
+    animation: cloud_3 100s linear infinite
+}
+
+@-webkit-keyframes flower_1 {
+    0% {
+        -webkit-transform: scale(0) rotate(0deg);
+        opacity: 1
+    }
+    50% {
+        -webkit-transform: scale(0.6) rotate(20deg);
+        opacity: 1
+    }
+    100% {
+        -webkit-transform: scale(1) rotate(40deg);
+        opacity: 0
+    }
+}
+
+@keyframes flower_1 {
+    0% {
+        transform: scale(0) rotate(0);
+        opacity: 1
+    }
+    50% {
+        transform: scale(0.6) rotate(20deg);
+        opacity: 1
+    }
+    100% {
+        transform: scale(1) rotate(40deg);
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes flower_2 {
+    0% {
+        -webkit-transform: scale(0) rotate(0deg);
+        opacity: 1
+    }
+    50% {
+        -webkit-transform: scale(1) rotate(-20deg);
+        opacity: 1
+    }
+    100% {
+        -webkit-transform: scale(2) rotate(-20deg);
+        opacity: 0
+    }
+}
+
+@keyframes flower_2 {
+    0% {
+        transform: scale(0) rotate(0deg);
+        opacity: 1
+    }
+    50% {
+        transform: scale(1) rotate(-20deg);
+        opacity: 1
+    }
+    100% {
+        transform: scale(2) rotate(-20deg);
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes flower_3 {
+    0% {
+        -webkit-transform: scale(0) rotate(-180deg);
+        opacity: 1
+    }
+    50% {
+        -webkit-transform: scale(1) rotate(-180deg);
+        opacity: 1
+    }
+    100% {
+        -webkit-transform: scale(2) rotate(-180deg);
+        opacity: 0
+    }
+}
+
+@keyframes flower_3 {
+    0% {
+        transform: scale(0) rotate(-180deg);
+        opacity: 1
+    }
+    50% {
+        transform: scale(1) rotate(-180deg);
+        opacity: 1
+    }
+    100% {
+        transform: scale(2) rotate(-180deg);
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes cloud_1 {
+    0% {
+        left: 0
+    }
+    100% {
+        left: -200%
+    }
+}
+
+@-moz-keyframes cloud_1 {
+    0% {
+        left: 0
+    }
+    100% {
+        left: -200%
+    }
+}
+
+@keyframes cloud_1 {
+    0% {
+        left: 0
+    }
+    100% {
+        left: -200%
+    }
+}
+
+@-webkit-keyframes cloud_2 {
+    0% {
+        left: 0
+    }
+    100% {
+        left: -200%
+    }
+}
+
+@-moz-keyframes cloud_2 {
+    0% {
+        left: 0
+    }
+    100% {
+        left: -200%
+    }
+}
+
+@keyframes cloud_2 {
+    0% {
+        left: 0
+    }
+    100% {
+        left: -200%
+    }
+}
+
+@-webkit-keyframes cloud_3 {
+    0% {
+        left: 0
+    }
+    100% {
+        left: -200%
+    }
+}
+
+@-moz-keyframes cloud_3 {
+    0% {
+        left: 0
+    }
+    100% {
+        left: -200%
+    }
+}
+
+@keyframes cloud_3 {
+    0% {
+        left: 0
+    }
+    100% {
+        left: -200%
+    }
+}
+
+
+
+
+
+
+.showMenu{
+    background: pink;
+}
+.showMenu a {
+    width: 24px;
+    height: 80px;
+}
+
+.showMenu a {
+    display: block;
+    width: 24px;
+    height: 80px;
+    position: relative;
+}
+
+.showMenu a:before, .showMenu a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 4px;
+    width: 100%;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    background-color: #fff;
+    margin-top: -2px;
+}
+
+.showMenu a:before {
+    -moz-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+.showMenu a:after {
+    -moz-transform: translateY(5px);
+    -o-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+}
+
+.hideMenu a:before {
+    -moz-transform: rotate(90deg) rotate(45deg);
+    -o-transform: rotate(90deg) rotate(45deg);
+    -ms-transform: rotate(90deg) rotate(45deg);
+    -webkit-transform: rotate(90deg) rotate(45deg);
+    transform: rotate(90deg) rotate(45deg);
+}
+/*导航菜单右上角新加红色圆圈*/
+.showMenu a em {
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: -6px;
+    top: 25px;
+}
+
+/*导航菜单右上角新加红色圆圈*/
+.hideMenu a:after {
+    -moz-transform: rotate(90deg) rotate(-45deg);
+    -o-transform: rotate(90deg) rotate(-45deg);
+    -ms-transform: rotate(90deg) rotate(-45deg);
+    -webkit-transform: rotate(90deg) rotate(-45deg);
+    transform: rotate(90deg) rotate(-45deg);
+}

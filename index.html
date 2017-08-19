@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script type="text/javascript">
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 640 * 100 + 'px';
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--banner-->
+<div class="bg banner">
+    <img src="banner_01.png" alt="活动语">
+    <img src="banner_02.png" alt="活动语">
+    <img src="banner_03.png" alt="活动语">
+    <img src="banner_04.png" alt="活动语">
+    <img src="banner_05.png" alt="活动语">
+    <img src="banner_06.png" alt="活动语">
+    <img src="banner_07.png" alt="活动语">
+    <div class="sky">
+        <div class="flower_3"></div>
+        <div class="flower_1"></div>
+        <div class="flower_2"></div>
+        <div class="clouds_1"></div>
+        <div class="clouds_2"></div>
+        <div class="clouds_3"></div>
+    </div>
+</div>
+<div class="banner">
+    <img src="txy1.jpg">
+    <img src="txy2.jpg">
+    <img src="txy3.jpg">
+    <img src="txy4.jpg">
+    <img src="txy5.jpg">
+    <img src="txy6.jpg">
+    <img src="txy7.jpg">
+    <img src="fx1.jpg">
+    <img src="fx2.jpg">
+    <img src="fx3.jpg">
+</div>
+<div class="showMenu absolute menu_btn clearfix"><a href="javascript:void(0)"><em></em></a></div>
+<script type="text/javascript" src="../jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+    var $btn=$('.menu_btn');
+    console.log($btn);
+    $btn.click(function(){
+        $(this).toggleClass("hideMenu");
+    });
+</script>
+</body>
+</html>
